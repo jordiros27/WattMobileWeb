@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="WattMobile" />
+        <title>WattMobile</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html">WattMobile</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Coche</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="team.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="images.html">Imágenes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-white" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-12">
+                        <h4>Cómo lo hemos ido adaptando</h4>
+                        <p class="text-muted">El primer prototipo de Wattmobile UPV se ha
+                            diseñado para participar en los distintos eventos
+                            de las subida de montaña de Rally. Por lo tanto,
+                            los objetivos han sido optimizar el peso y la potencia
+                            para poder realizar con éxito las distintas
+                            pruebas del campeonato.
+                            Este proyecto ha requerido de un año de planificación
+                            y estudio para poder comprender las
+                            necesidades de un plan de esta envergadura. El
+                            próximo año empezará el desarrollo del coche y
+                            se finalizará la primera versión.</p>
+                        <br>
+                        <h4>Qué estamos haciendo</h4>
+                        <p class="text-muted">
+                            El coche será una primera versión de lo que
+                            el proyecto de Wattmobile quiere hacer. En sí
+                            el coche será muy similar al vehículo que era
+                            antes con el motor de gasolina. En la segunda
+                            versión se aumentará la potencia al doble y se
+                            introducirá una caja de cambios que permitirá
+                            aumentar la velocidad del coche. De este modo
+                            el proyecto y el coche avanzarán conjuntamente
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <table class="text-muted table">
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Potencia</td>
+                                <td>140 CV (100Kw)</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Nº de motores</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Tracción</td>
+                                <td>Delantera</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Revoluciones</td>
+                                <td>6500 RPM</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Capacidad</td>
+                                <td>7000 Wh</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Peso</td>
+                                <td>900 Kg</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Par motor</td>
+                                <td>230nm</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Aceleración 0-100Km/h</td>
+                                <td>10.7s</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Autonomía</td>
+                                <td>10 Km</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Vel. Máxima</td>
+                                <td>160 Km/h</td>
+                            </tr>
+                            <tr class="table-cell">
+                                <td class="font-weight-bold">Emisiones de CO2</td>
+                                <td>0 gr/km</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-12 chart">
+                        <canvas id="Chart" width="600" height="400"></canvas>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="assets/img/photos/render1.png" alt="" class="img-car">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Battery and Engine-->
+        <section>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12 col-md-14 car-selector">
+                      <ul class="nav nav-pills car-selector" role="tablist">
+                        <li class="nav-item car-item">
+                            <a class="nav-link active btn btn-dark btn-xl js-scroll-trigger" href="#engine" role="tab" data-toggle="tab">
+                                Motor
+                            </a>
+                        </li>
+                        <li class="nav-item car-item">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#battery" role="tab" data-toggle="tab">
+                                Batería
+                            </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active car-text" id="engine">
+                                <p class="text-muted">
+                                    Explicación de motor y fotos
+                                </p>
+                            </div>
+                            <div class="tab-pane car-text" id="battery">
+                                <p class="text-muted">
+                                   Explicación de batería y fotos 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Chart-->
+        <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+ 
+        <script>
+            var popCanvas = document.getElementById("Chart");
+            var marksData = {
+                labels: ["Potencia", "Revoluciones", "Peso", "Par", "Aceleración", "Velocidad", "Emisiones"],
+                datasets: [{
+                    label: "Original",
+                    backgroundColor: "rgba(4,51,83,0.3)",
+                    data: [50, 75, 100, 30, 40, 90, 100]
+                }, {
+                    label: "Conversión",
+                    backgroundColor: "rgba(24,164,224,0.3)",
+                    data: [100, 100, 75, 100, 90, 100, 0]
+                }]
+            };
+            var radarChart = new Chart(popCanvas, {
+                type: 'radar',
+                data: marksData
+            });
+        </script>
+        </body>
+</html>
