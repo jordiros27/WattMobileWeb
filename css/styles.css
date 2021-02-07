@@ -10023,7 +10023,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
@@ -10227,7 +10227,14 @@ header.masthead h1 {
 }
 
 /* La otra cara del proyecto */
-
+@media (max-width: 576px) {
+  .photo-project-1 {
+    width: 100%;
+  }
+  .text-project {
+    margin-top: 5%;
+  }
+}
 @media (min-width: 576px) {
   .photo-project-1 {
     width: 100%;
@@ -10353,7 +10360,7 @@ header.masthead h1 {
 
 /* Chart */
 .chart {
-  margin-top: 5%;
+  margin: 10%;
 }
 
 /* Car */
