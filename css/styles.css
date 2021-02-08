@@ -10230,6 +10230,7 @@ header.masthead h1 {
 @media (max-width: 576px) {
   .photo-project-1 {
     width: 100%;
+    padding: 2.5%;
   }
   .text-project {
     margin-top: 5%;
@@ -10238,6 +10239,7 @@ header.masthead h1 {
 @media (min-width: 576px) {
   .photo-project-1 {
     width: 100%;
+    padding: 2.5%;
   }
   .text-project {
     margin-top: 5%;
@@ -10246,6 +10248,7 @@ header.masthead h1 {
 @media (min-width: 768px) {
   .photo-project-1 {
     width: 100%;
+    padding-bottom: 2%;
   }
   .text-project {
     margin-top: 5%;
@@ -10255,6 +10258,8 @@ header.masthead h1 {
   .photo-project-1 {
     float: left;
     width: 50%;
+    padding-right: 5%;
+    padding-bottom: 2%;
   }
   .text-project {
     display: contents;
@@ -10264,16 +10269,17 @@ header.masthead h1 {
   .photo-project-1 {
     float: left;
     width: 50%;
+    padding-right: 5%;
+    padding-bottom: 2%;
   }
   .text-project {
     margin-top: 5%;
     display: contents;
   }
 }
-.photo-project-1 {
-  padding-right: 5%;
-  padding-bottom: 2%;
-}
+.title-section {
+  margin: 10%;
+}  
 
 .text-project {
   color: #fff !important;
@@ -10285,6 +10291,14 @@ header.masthead h1 {
 }
 
 /* Objetives */
+@media (max-width: 576px) {
+  .objective {
+    width: 100%;
+  }
+  .objective-inverse {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) {
   .objective {
     width: 100%;
@@ -10304,23 +10318,9 @@ header.masthead h1 {
 @media (min-width: 992px) {
   .objective {
     width: 100%;
-    display: flex;
-  }
-  .objective div:nth-of-type(1) {
-    order: 1;
-  }
-  .objective div:nth-of-type(2) {
-    order: 2;
   }
   .objective-inverse {
     width: 100%;
-    display: flex;
-  }
-  .objective-inverse div:nth-of-type(1) {
-    order: 2;
-  }
-  .objective-inverse div:nth-of-type(2) {
-    order: 1;
   }
 }
 @media (min-width: 1200px) {
@@ -10347,10 +10347,10 @@ header.masthead h1 {
 }
 
 .objective {
-  padding: 2.5%;
+  margin: 2.5%;
 }
 .objective-inverse {
-  padding: 2.5%;
+  margin: 2.5%;
 }
 
 .objective-title {
@@ -10360,7 +10360,7 @@ header.masthead h1 {
 
 /* Chart */
 .chart {
-  margin: 10%;
+  width: 100%;
 }
 
 /* Car */
@@ -10381,4 +10381,5 @@ header.masthead h1 {
 .img-car {
   padding-top: 2%;
   width: 100%;
+  display: flex;
 }
