@@ -10153,7 +10153,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(4, 51, 83, 0.4) 0%, rgba(211, 221, 230, 0.2) 100%), url("../assets/img/photos/render1.png");
+  background: linear-gradient(to bottom, rgba(4, 51, 83, 0.4) 0%, rgba(211, 221, 230, 0.2) 100%), url("../assets/img/photos/render3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10164,8 +10164,7 @@ header.masthead h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 40rem;
+    height: 100%;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
@@ -10358,12 +10357,14 @@ header.masthead h1 {
   align-items: center;
 }
 
-/* Chart */
+/*Chart*/
 .chart {
-  width: 100%;
+  padding-top: 3%;
 }
 
 /* Car */
+
+
 .car-item {
   margin-top: 3%;
   display: flex;
@@ -10380,6 +10381,76 @@ header.masthead h1 {
 
 .img-car {
   padding-top: 2%;
-  width: 100%;
+  height: 100%;
   display: flex;
+}
+
+.car-photo {
+  background-image: url("../assets/img/photos/render3.png");
+  padding-top: 25%;
+  padding-bottom: 30%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+/*Team*/
+.title-team {
+  margin-bottom: 2.5%;
+}
+
+.team-member {
+  padding: 1%;
+}
+
+.team-text {
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+.team-box {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.team-box .team-box-captation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.team-box:hover .team-box-captation{
+  opacity: 1;
+}
+
+.linkedin-icon {
+  width: 25%;
+}
+
+.team-box-captation {
+  background-color: rgba(211, 221, 230, 0.7);
+  height: 100%;
+}
+
+.container-team {
+  padding: 5%;
+}
+
+.team-photo {
+  background-image: url("../assets/img/people/hero1.jpeg");
+  padding-top: 25%;
+  padding-bottom: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }

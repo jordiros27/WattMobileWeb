@@ -32,9 +32,13 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead h-50">
+        <header class="bg-dark">
             <div class="container">
-                
+                <div class="row h-75 align-items-center justify-content-center text-center car-photo">
+                    <div class="col-lg-8 car-title">
+                        <h2 class="text-uppercase text-white font-weight-bold" style="font-size: 36pt;">coche</h2>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- About-->
@@ -118,12 +122,7 @@
                     </div>
                 </div>                
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-12 chart">
-                        <canvas id="Chart" class="chart"></canvas>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <img src="assets/img/photos/render1.png" alt="" class="img-car">
-                    </div>
+                    <canvas id="Chart" class="chart" width="70%" ></canvas>
                 </div>
             </div>
         </section>
@@ -182,14 +181,19 @@
                 labels: ["Potencia", "Revoluciones", "Peso", "Par", "Aceleración", "Velocidad", "Emisiones"],
                 datasets: [{
                     label: "Original",
-                    backgroundColor: "rgba(4,51,83,0.3)",
+                    backgroundColor: "rgba(4,51,83,0.2)",
+                    borderColor: "rgb(4,41,83)",
                     data: [50, 75, 100, 30, 40, 90, 100]
                 }, {
                     label: "Conversión",
-                    backgroundColor: "rgba(24,164,224,0.3)",
+                    backgroundColor: "rgba(24,164,224,0.2)",
+                    borderColor: "rgb(24,164,224)",
                     data: [100, 100, 75, 100, 90, 100, 0]
                 }]
             };
+            var marksOption = {
+
+            }
             var radarChart = new Chart(popCanvas, {
                 type: 'radar',
                 data: marksData
