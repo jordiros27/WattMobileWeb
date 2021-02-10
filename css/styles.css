@@ -10280,6 +10280,10 @@ header.masthead h1 {
   margin: 10%;
 }  
 
+.title-section-sponsors {
+  margin-top: 10%;
+}
+
 .text-project {
   color: #fff !important;
   font-size: 12pt;
