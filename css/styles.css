@@ -10386,10 +10386,9 @@ header.masthead h1 {
 }
 
 .car-photo {
-  background-image: url("../assets/img/photos/render3.png");
+  background-image: url("../assets/img/photos/render4.png");
   padding-top: 25%;
   padding-bottom: 30%;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10441,7 +10440,7 @@ header.masthead h1 {
   height: 100%;
 }
 
-.container-team {
+.container-team, .container-car {
   padding: 5%;
 }
 
