@@ -14,6 +14,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Scroll Reveal-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,7 +47,7 @@
         <section class="page-section bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 text-car">
                         <h4>Cómo lo hemos ido adaptando</h4>
                         <p class="text-muted">El primer prototipo de Wattmobile UPV se ha
                             diseñado para participar en los distintos eventos
@@ -71,7 +73,7 @@
                             el proyecto y el coche avanzarán conjuntamente
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 table-car">
                         <table class="text-muted table">
                             <tr class="table-cell">
                                 <td class="font-weight-bold">Potencia</td>
@@ -121,14 +123,14 @@
                         
                     </div>
                 </div>                
-                <div class="row justify-content-center">
+                <div class="row justify-content-center chart-car">
                     <canvas id="Chart" class="chart" width="70%" ></canvas>
                 </div>
             </div>
         </section>
         <!--Battery and Engine-->
         <section>
-            <div class="container">
+            <div class="container sections-car">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 col-md-14 car-selector">
                       <ul class="nav nav-pills car-selector" role="tablist">
@@ -141,17 +143,55 @@
                             <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#battery" role="tab" data-toggle="tab">
                                 Batería
                             </a>
-                            </li>
+                        </li>
+                        <li class="nav-item car-item">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#design" role="tab" data-toggle="tab">
+                                Diseño
+                            </a>
+                        </li>
+                        <li class="nav-item car-item">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#marketing" role="tab" data-toggle="tab">
+                                Marketing
+                            </a>
+                        </li>
                         </ul>
                         <div class="tab-content tab-space">
                             <div class="tab-pane active car-text" id="engine">
                                 <p class="text-muted">
-                                    Explicación de motor y fotos
+                                    Para la unidad de potencia hemos empleado un motor de flujo axial. Gracias a UNITEK Industrie Elektronik 
+                                    hemos podido controlar el motor dándonos unos magníficos 150CV. En el grupo de motor se trabaja en aspectos 
+                                    dinámicos del coche y estructurales. Tales como el diseño del bloque motor y su integración en el vehículo. 
+                                    En este departamento se aplican conocimientos de electrónica, eléctrica, mecánica, informática, etc.
                                 </p>
                             </div>
                             <div class="tab-pane car-text" id="battery">
                                 <p class="text-muted">
-                                   Explicación de batería y fotos 
+                                    La batería es una de las piezas clave del proyecto, con ella podemos alimentar a todos los dispositivos del 
+                                    vehículo. Hemos diseñado un sistema de 12 baterías de 48v con los cuales obtenemos unos 670V en su estado de 
+                                    máxima carga y proporcionando una potencia de 150KW.
+                                    <br>
+                                    <br>
+                                    Tanto la búsqueda de material como la creación de baterías para vehículos tienen lugar en la UPV. En WattmobileUPV 
+                                    hemos adquirido un conocimiento sobre la tecnología de baterías que nos permite fabricar nuestros propios modelos. 
+                                    En este departamento se aplican conocimientos de electrónica, eléctrica, mecánica, informática y diseño entre otras 
+                                    disciplinas.
+                                </p>
+                            </div>
+                            <div class="tab-pane car-text" id="design">
+                                <p class="text-muted">
+                                    En este equipo se trabaja la imagen del proyecto siendo así la mirada que construye hacía nuestro público.
+                                    <br>
+                                    <br>
+                                    Las principales funciones son el diseño de la página web, de las redes sociales, el exterior del coche, el 
+                                    centro de información dentro del coche. Como se puede ver, este grupo se enfoca en la parte más creativa y 
+                                    espontánea del proyecto
+                                </p>
+                            </div>
+                            <div class="tab-pane car-text" id="marketing">
+                                <p class="text-muted">
+                                    El grupo de marketing se encarga de toda la gestión del proyecto. Se tratan asuntos económicos, sociales y 
+                                    organizativos. El principal objetivo de esta sección es el funcionamiento adecuado de las distintas partes 
+                                    que componen WattmobileUPV.
                                 </p>
                             </div>
                         </div>
@@ -162,7 +202,7 @@
         
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+            <div class="container"><div class="small text-center text-muted">Copyright © 2021 - WattmobileUPV</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -198,6 +238,13 @@
                 type: 'radar',
                 data: marksData
             });
+        </script>
+
+        <script>
+            ScrollReveal().reveal('.text-car');
+            ScrollReveal().reveal('.table-car');
+            ScrollReveal().reveal('.chart-car');
+            ScrollReveal().reveal('.sections-car');
         </script>
         </body>
 </html>
