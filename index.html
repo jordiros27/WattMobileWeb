@@ -21,14 +21,15 @@
         <meta name="twitter:image" content="assets/img/photos/render3.png">
         <meta name="twitter:creator" content="@wattmobileupv">
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/logo/wattmobile.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Metadatos-->
+        <!-- Scroll Reveal-->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -64,39 +65,39 @@
         <section class="page-section">
             <div class="container">
                 <div class="row">
-                    <div class="row objective">
+                    <div class="row objective objective-1">
                         <div class="col-xl-3 col-md-6">
                             <h3 class="text-center">Objetivo 1</h3>
                         </div>
                         <div class="col-xl-9 col-md-18">
-                            <p class="text-muted mb-0 text-center">Nuestro principal objetivo es llevar el coche en el que estamos trabajando a la próxima 
-                                edición de subidas de montaña. Para ello estamos electrificando un ford Ka del 2000. 
-                                La competición nos exige tener una auKa autonomía de 10 minutos y una potencia superior 
-                                de 100 tonomía CV para poder estar al máximo nivel.
+                            <p class="text-muted mb-0 text-center">Nuestro principal objetivo es llevar el coche en el que estamos 
+                                trabajando a la próxima edición de subidas de montaña. Para ello estamos electrificando un ford Ka del 2000. 
+                                La competición a su máximo nivel requiere de una autonomía de 10 minutos y una potencia superior 
+                                a los 100 km de autonomía que permita completar la prueba.
                             </p>
                         </div>
                     </div>
-                    <div class="row objective-inverse">
+                    <div class="row objective-inverse objective-2">
                         <div class="col-xl-3 col-md-6">
                             <h3 class="text-center">Objetivo 2</h3>
                         </div>
                         <div class="col-xl-9 col-md-18">
-                            <p class="text-muted mb-0 text-center">Wattmobile UPV, al mismo tiempo que está desarrollando el proyecto de competición, tiene entre 
-                                sus objetivos dar una segunda vida a los coches de combustión. Creemos que se pueden reutilizar 
-                                los coches del mismo modo que hoy en día lo hacemos con los  muebles “vintage”.
+                            <p class="text-muted mb-0 text-center">Otro de los objetivos que caracterizan al proyecto Wattmobile UPV 
+                                es dar una segunda vida a los coches de combustión. De este modo los vehículos podrían ser reutilizados 
+                                del mismo modo que se remodelan elementos como los muebles “vintage”.
                             </p>
                         </div>
                     </div>
-                    <div class="row objective">
+                    <div class="row objective objective-3">
                         <div class="col-xl-3 col-md-6">
                             <h3 class="text-center">Objetivo 3</h3>
                         </div>
                         <div class="col-xl-9 col-md-18">
                             <p class="text-muted mb-0 text-center">
-                            En el automovilismo español todavía no hay una competición de vehículos eléctricos de carreras. 
-                            Es por ello que en Wattmobile UPV hemos querido emprender e introducir en el deporte del motor 
-                            la movilidad eléctrica. De esta forma crear la primera competición con vehículos de competición 
-                            100% eléctricos. Y así ser unos de los referentes a nivel europeo e internacional.
+                                En el automovilismo español todavía no hay una competición de vehículos eléctricos de carreras. 
+                                Es por ello que en Wattmobile UPV hemos querido emprender introduciendo en el deporte del motor 
+                                la movilidad eléctrica. <b>De esta forma crear la primera competición con vehículos de competición 100% eléctricos. </b>
+                                Y así ser unos de los referentes a nivel europeo e internacional.
                             </p>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
         </section>
        
         <!-- La otra cara del proyecto-->
-        <section class="page-section bg-dark text-white">
+        <section class="page-section bg-dark text-white section-index">
             <div class="container">
                 <div class="row">
                     <h2 class="mb-4 text-center">La otra cara del proyecto</h2>
@@ -129,7 +130,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section contact-index" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -158,5 +159,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            ScrollReveal().reveal('.objective-1');
+            ScrollReveal().reveal('.objective-2');
+            ScrollReveal().reveal('.objective-3');
+            ScrollReveal().reveal('.section-index');
+            ScrollReveal().reveal('.contact-index');
+        </script>
     </body>
 </html>
