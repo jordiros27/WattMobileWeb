@@ -23,10 +23,20 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="car.html">Coche</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="team.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Imágenes</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-car" href="car.html">Coche</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-team" href="team.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-sponsors" href="sponsors.html">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="#">Imágenes</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
+                              ES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" onclick="change_to('es');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('en');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -34,7 +44,7 @@
         <!-- Title-->
         <section class="page-section text-white bg-dark h-auto">
             <div class="container text-center">
-                <h1 class="text-uppercase text-white font-weight-bold title-section">Fotos</h1>
+                <h1 class="text-uppercase text-white font-weight-bold title-section" data-translate="images-title">Imágenes</h1>
             </div>
         </section>
         <!-- Images-->
@@ -87,37 +97,21 @@
                             <div class="col-lg-6 col-sm-12 foto">
                                 <a class="portfolio-box" href="assets/img/gallery/img_9.jpg">
                                     <img class="img-fluid" src="assets/img/gallery/img_9.jpg" alt="" />
-                                    <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Título</div>
-                                    </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 col-sm-12 foto">
                                 <a class="portfolio-box" href="assets/img/gallery/maletero.JPG">
                                     <img class="img-fluid" src="assets/img/gallery/maletero.JPG" alt="" />
-                                    <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Título</div>
-                                    </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 col-sm-12 foto">
                                 <a class="portfolio-box" href="assets/img/gallery/maletero.JPG">
                                     <img class="img-fluid" src="assets/img/gallery/maletero.JPG" alt="" />
-                                    <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Título</div>
-                                    </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 col-sm-12 foto">
                                 <a class="portfolio-box" href="assets/img/gallery/maletero.JPG">
                                     <img class="img-fluid" src="assets/img/gallery/maletero.JPG" alt="" />
-                                    <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Título</div>
-                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -138,6 +132,50 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Lang-->
+        <script>
+            // Lang info
+            var langs = ['es', 'en', 'vlc']
+            var lang_index = 0
+
+            // The page will appear in english
+            var current_lang = langs[lang_index]
+
+
+            window.change_lang = function() {
+                // Selecting the next lang
+                past_lang = langs[lang_index]
+                lang_index = ++lang_index % 2
+                current_lang = langs[lang_index]
+                document.getElementById('nav-but').innerHTML = past_lang.toUpperCase()
+                translate()
+            }
+
+            window.change_to = function(lang) {
+                // Selecting the next lang
+                past_lang = langs[lang_index]
+                if ('en' == lang) {
+                    lang_index = 0
+                } else if ('es' == lang) {
+                    lang_index = 1
+                } else if ('vlc' == lang) {
+                    lang_index = 2
+                } else {
+                    lang_index = 0
+                }
+                current_lang = lang
+                translate()
+            }
+
+            function translate() {
+                $("[data-translate]").each(function() {
+                    var key = $(this).data('translate')
+                    $(this).html(dictionary[key][current_lang] || "N/A")
+                });
+            }
+
+            translate();
+        </script>
     </body>
 </html>
 
