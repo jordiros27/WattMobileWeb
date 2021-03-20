@@ -30,6 +30,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Scroll Reveal-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- Language-->
+        <script src="js/dictionary.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -44,13 +46,13 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-sponsors" href="sponsors.html">Sponsors</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="images.html">Imágenes</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="nav-lang">
                               ES
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" onclick="change_to('es');">ES</a>
-                                <a class="dropdown-item" onclick="change_to('en');">EN</a>
-                                <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>
+                                <a class="dropdown-item" onclick="change_to('ES');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('EN');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('VAL');">VLC</a>
                             </div>
                         </li>
                     </ul>
@@ -71,7 +73,7 @@
         <section class="page-section bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 text-car">
+                    <div class="col-lg-6 col-md-12 text-car" >
                         <h4 data-translate="adapted-title">Cómo lo hemos ido adaptando</h4>
                         <p class="text-muted" data-translate="adapted-text">El primer prototipo de Wattmobile UPV se ha
                             diseñado para participar en los distintos eventos
@@ -109,7 +111,7 @@
                             </tr>
                             <tr class="table-cell">
                                 <td class="font-weight-bold" data-translate="traction">Tracción</td>
-                                <td>Delantera</td>
+                                <td data-translate="traction-text">Delantera</td>
                             </tr>
                             <tr class="table-cell">
                                 <td class="font-weight-bold" data-translate="revolutions">Revoluciones</td>
@@ -212,7 +214,7 @@
                                 </p>
                             </div>
                             <div class="tab-pane car-text" id="marketing">
-                                <p class="text-muted" data-translate="marketing-section-translate">
+                                <p class="text-muted" data-translate="marketing-section-text">
                                     El grupo de marketing se encarga de toda la gestión del proyecto. Se tratan asuntos económicos, sociales y 
                                     organizativos. El principal objetivo de esta sección es el funcionamiento adecuado de las distintas partes 
                                     que componen WattmobileUPV.
@@ -284,7 +286,7 @@
         <!-- Lang-->
         <script>
             // Lang info
-            var langs = ['es', 'en', 'vlc']
+            var langs = ['ES', 'EN', 'VAL']
             var lang_index = 0
 
             // The page will appear in english
@@ -303,11 +305,11 @@
             window.change_to = function(lang) {
                 // Selecting the next lang
                 past_lang = langs[lang_index]
-                if ('en' == lang) {
+                if ('ES' == lang) {
                     lang_index = 0
-                } else if ('es' == lang) {
+                } else if ('EN' == lang) {
                     lang_index = 1
-                } else if ('vlc' == lang) {
+                } else if ('VAL' == lang) {
                     lang_index = 2
                 } else {
                     lang_index = 0

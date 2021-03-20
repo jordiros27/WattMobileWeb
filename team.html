@@ -30,6 +30,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Scroll Reveal-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- Language-->
+        <script src="js/dictionary.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -44,13 +46,13 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-sponsors" href="sponsors.html">Sponsors</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="images.html">Imágenes</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="nav-lang">
                               ES
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" onclick="change_to('es');">ES</a>
-                                <a class="dropdown-item" onclick="change_to('en');">EN</a>
-                                <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>
+                                <a class="dropdown-item" onclick="change_to('ES');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('EN');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('VAL');">VLC</a>
                             </div>
                         </li>
                     </ul>
@@ -573,9 +575,9 @@
                         <div class="member">
                             <a href="likedin" class="team-box">
                                 <img src="assets/img/people/IMG_20201024_185424 - Silvia Veses Bibire.jpg" alt="" class="card-img" width="30%">
-                                    <div class="team-box-captation">
+                                    <!--<div class="team-box-captation">
                                         <img src="assets/img/icons/linkedin.png" alt="" class="card-image linkedin-icon">
-                                    </div>
+                                    </div>-->
                                 </span>
                             </a>
                         </div>
@@ -729,7 +731,7 @@
         <!-- Lang-->
         <script>
             // Lang info
-            var langs = ['es', 'en', 'vlc']
+            var langs = ['ES', 'EN', 'VAL']
             var lang_index = 0
 
             // The page will appear in english
@@ -748,11 +750,11 @@
             window.change_to = function(lang) {
                 // Selecting the next lang
                 past_lang = langs[lang_index]
-                if ('en' == lang) {
+                if ('ES' == lang) {
                     lang_index = 0
-                } else if ('es' == lang) {
+                } else if ('EN' == lang) {
                     lang_index = 1
-                } else if ('vlc' == lang) {
+                } else if ('VAL' == lang) {
                     lang_index = 2
                 } else {
                     lang_index = 0

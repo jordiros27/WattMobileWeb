@@ -1,9 +1,9 @@
 var dictionary = {
     //nav
     'nav-lang' : {
-        'ES' : 'es',
-        'VAL' : 'val',
-        'EN' : 'en'
+        'ES' : 'ES',
+        'VAL' : 'VAL',
+        'EN' : 'EN'
     },
     'nav-car' : {
         'ES' : 'Coche',
@@ -68,7 +68,7 @@ var dictionary = {
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'objetive1-text' : {
+    'objective1-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
@@ -78,7 +78,7 @@ var dictionary = {
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'objetive2-text' : {
+    'objective2-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
@@ -88,7 +88,7 @@ var dictionary = {
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'objetive3-text' : {
+    'objective3-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
@@ -137,7 +137,7 @@ var dictionary = {
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'Power' : {
+    'power' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
@@ -148,6 +148,11 @@ var dictionary = {
         'EN' : 'Car'
     },
     'traction' : {
+        'ES' : 'Coche',
+        'VAL' : 'Cotxe',
+        'EN' : 'Car'
+    },
+    'traction-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
@@ -259,27 +264,27 @@ var dictionary = {
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'cordinadores-text' : {
+    'coordinadores-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'cordinadores-engine-text' : {
+    'coordinadores-engine-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'cordinadores-battery-text' : {
+    'coordinadores-battery-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'cordinadores-design-text' : {
+    'coordinadores-design-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
     },
-    'cordinadores-marketing-text' : {
+    'coordinadores-marketing-text' : {
         'ES' : 'Coche',
         'VAL' : 'Cotxe',
         'EN' : 'Car'
