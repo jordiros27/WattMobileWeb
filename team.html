@@ -30,8 +30,6 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Scroll Reveal-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
-        <!-- Language-->
-        <script src="js/dictionary.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -46,13 +44,13 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-sponsors" href="sponsors.html">Sponsors</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="images.html">Imágenes</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="nav-lang">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
                               ES
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" onclick="change_to('ES');">ES</a>
-                                <a class="dropdown-item" onclick="change_to('EN');">EN</a>
-                                <a class="dropdown-item" onclick="change_to('VAL');">VLC</a>
+                                <a class="dropdown-item" onclick="change_to('es');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('en');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>
                             </div>
                         </li>
                     </ul>
@@ -575,9 +573,9 @@
                         <div class="member">
                             <a href="likedin" class="team-box">
                                 <img src="assets/img/people/IMG_20201024_185424 - Silvia Veses Bibire.jpg" alt="" class="card-img" width="30%">
-                                    <!--<div class="team-box-captation">
+                                    <div class="team-box-captation">
                                         <img src="assets/img/icons/linkedin.png" alt="" class="card-image linkedin-icon">
-                                    </div>-->
+                                    </div>
                                 </span>
                             </a>
                         </div>
@@ -642,7 +640,9 @@
                             <a class="text-white" href="mailto:pablopuertes@gmail.com">pablopuertes@gmail.com
                         </a>
                         </div> 
-                    </div> <div class="col-lg-3 col-md-4 col-sm-6 text-center team-member">
+                    </div> 
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-center team-member">
                         <div class="member">
                             <a href="https://www.linkedin.com/in/juanrroblesgomez
                             " class="team-box">
@@ -712,6 +712,49 @@
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
+
+            <div class="row justify-content-center">                
+                 <h4>¡Síguenos en nuestras redes sociales para no perderte nada!</h4>          
+            </div>
+                    
+            <div class="row justify-content-center">
+
+
+                <div class="col-lg-1 col-md-4 col-sm-6 text-center">
+                    
+                    <div class="social network">
+                        <a href="https://www.instagram.com/wattmobileupv/">
+                            <img src="assets/img/rrss/Instagram Logo.png" alt="" class="card-img" width="30%">
+                             </span>
+                        </a>
+                    </div>
+                 </div> 
+                
+                 <div class="col-lg-1 col-md-2 col-sm-6 text-center">
+                    <div class="social network">
+                        <a href="https://twitter.com/wattmobileupv">
+                            <img src="assets/img/rrss/twitter logo.png" alt="" class="card-img" width="30%">
+                             </span>
+                        </a>
+                    </div>
+                 </div> 
+                 <div class="col-lg-1 col-md-4 col-sm-6 text-center">
+                    <div class="social network">
+                        <a href="https://es.linkedin.com/company/wattmobileupv">
+                            <img src="assets/img/rrss/LinkedIn logo.png" alt="" class="card-img" width="30%">
+                             </span>
+                        </a>
+                    </div>
+
+                    <div class="text-white">
+                        <h5>_______</h5>
+                    </div>
+
+                 </div>
+
+        
+            </div>
+
             <div class="container"><div class="small text-center text-muted">Copyright © 2021 - WattMobileUPV</div></div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -731,7 +774,7 @@
         <!-- Lang-->
         <script>
             // Lang info
-            var langs = ['ES', 'EN', 'VAL']
+            var langs = ['es', 'en', 'vlc']
             var lang_index = 0
 
             // The page will appear in english
@@ -750,11 +793,11 @@
             window.change_to = function(lang) {
                 // Selecting the next lang
                 past_lang = langs[lang_index]
-                if ('ES' == lang) {
+                if ('en' == lang) {
                     lang_index = 0
-                } else if ('EN' == lang) {
+                } else if ('es' == lang) {
                     lang_index = 1
-                } else if ('VAL' == lang) {
+                } else if ('vlc' == lang) {
                     lang_index = 2
                 } else {
                     lang_index = 0
