@@ -3,9 +3,23 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="WattMobile" />
+        <meta name="description" content="Explicación sobre el equipo y como trabaja, además se muestran las características del coche" />
+        <meta name="author" content="WattMobileUPV" />
+        <meta name="googlebot" content="all" />
         <title>WattMobile</title>
+        <!-- Metadatos Facebook-->
+        <meta property="og:url"                content="http://wattmobile.webs.upv.es" />
+        <meta property="og:type"               content="Coche" />
+        <meta property="og:title"              content="WattMobile" />
+        <meta property="og:description"        content="Explicación sobre el equipo y como trabaja, además se muestran las características del coche" />
+        <meta property="og:image"              content="assets/img/photos/render3.png"/>
+        <!-- Metadatos Twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="Explicación sobre el equipo y como trabaja, además se muestran las características del coche">
+        <meta name="twitter:title" content="WattMobile">
+        <meta name="twitter:site" content="@wattmobileupv">
+        <meta name="twitter:image" content="assets/img/photos/render3.png">
+        <meta name="twitter:creator" content="@wattmobileupv">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -16,6 +30,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Scroll Reveal-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- Language-->
+        <script src="js/dictionary.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -25,10 +41,20 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Coche</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="team.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="images.html">Imágenes</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-car" href="#">Coche</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-team" href="team.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-sponsors" href="sponsors.html">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="images.html">Imágenes</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="nav-lang">
+                              ES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" onclick="change_to('ES');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('EN');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('VAL');">VLC</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,9 +73,9 @@
         <section class="page-section bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 text-car">
-                        <h4>Cómo lo hemos ido adaptando</h4>
-                        <p class="text-muted">El primer prototipo de Wattmobile UPV se ha
+                    <div class="col-lg-6 col-md-12 text-car" >
+                        <h4 data-translate="adapted-title">Cómo lo hemos ido adaptando</h4>
+                        <p class="text-muted" data-translate="adapted-text">El primer prototipo de Wattmobile UPV se ha
                             diseñado para participar en los distintos eventos
                             de las subida de montaña de Rally. Por lo tanto,
                             los objetivos han sido optimizar el peso y la potencia
@@ -61,8 +87,8 @@
                             próximo año empezará el desarrollo del coche y
                             se finalizará la primera versión.</p>
                         <br>
-                        <h4>Qué estamos haciendo</h4>
-                        <p class="text-muted">
+                        <h4 data-translate="doing-title">Qué estamos haciendo</h4>
+                        <p class="text-muted" data-translate="doing-text">
                             El coche será una primera versión de lo que
                             el proyecto de Wattmobile quiere hacer. En sí
                             el coche será muy similar al vehículo que era
@@ -76,47 +102,47 @@
                     <div class="col-lg-6 col-md-12 table-car">
                         <table class="text-muted table">
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Potencia</td>
+                                <td class="font-weight-bold" data-translate="power">Potencia</td>
                                 <td>140 CV (100Kw)</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Nº de motores</td>
+                                <td class="font-weight-bold" data-translate="engines-number">Nº de motores</td>
                                 <td>1</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Tracción</td>
-                                <td>Delantera</td>
+                                <td class="font-weight-bold" data-translate="traction">Tracción</td>
+                                <td data-translate="traction-text">Delantera</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Revoluciones</td>
+                                <td class="font-weight-bold" data-translate="revolutions">Revoluciones</td>
                                 <td>6500 RPM</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Capacidad</td>
+                                <td class="font-weight-bold" data-translate="capacity">Capacidad</td>
                                 <td>7000 Wh</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Peso</td>
+                                <td class="font-weight-bold" data-translate="weight">Peso</td>
                                 <td>900 Kg</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Par motor</td>
+                                <td class="font-weight-bold" data-translate="engine-torque">Par motor</td>
                                 <td>230nm</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Aceleración 0-100Km/h</td>
+                                <td class="font-weight-bold" data-translate="acceleration">Aceleración 0-100Km/h</td>
                                 <td>10.7s</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Autonomía</td>
+                                <td class="font-weight-bold" data-translate="autonomy">Autonomía</td>
                                 <td>10 Km</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Vel. Máxima</td>
+                                <td class="font-weight-bold" data-translate="velocity">Vel. Máxima</td>
                                 <td>160 Km/h</td>
                             </tr>
                             <tr class="table-cell">
-                                <td class="font-weight-bold">Emisiones de CO2</td>
+                                <td class="font-weight-bold" data-translate="co2">Emisiones de CO2</td>
                                 <td>0 gr/km</td>
                             </tr>
                         </table>
@@ -135,29 +161,29 @@
                     <div class="col-lg-12 col-md-14 car-selector">
                       <ul class="nav nav-pills car-selector" role="tablist">
                         <li class="nav-item car-item">
-                            <a class="nav-link active btn btn-dark btn-xl js-scroll-trigger" href="#engine" role="tab" data-toggle="tab">
+                            <a class="nav-link active btn btn-dark btn-xl js-scroll-trigger" href="#engine" role="tab" data-toggle="tab" data-translate="engine-section-title">
                                 Motor
                             </a>
                         </li>
                         <li class="nav-item car-item">
-                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#battery" role="tab" data-toggle="tab">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#battery" role="tab" data-toggle="tab" data-translate="battery-section-title">
                                 Batería
                             </a>
                         </li>
                         <li class="nav-item car-item">
-                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#design" role="tab" data-toggle="tab">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#design" role="tab" data-toggle="tab" data-translate="design-section-title">
                                 Diseño
                             </a>
                         </li>
                         <li class="nav-item car-item">
-                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#marketing" role="tab" data-toggle="tab">
+                            <a class="nav-link btn btn-dark btn-xl js-scroll-trigger" href="#marketing" role="tab" data-toggle="tab" data-translate="marketing-section-title">
                                 Marketing
                             </a>
                         </li>
                         </ul>
                         <div class="tab-content tab-space">
                             <div class="tab-pane active car-text" id="engine">
-                                <p class="text-muted">
+                                <p class="text-muted" data-translate="engine-section-text">
                                     Para la unidad de potencia hemos empleado un motor de flujo axial. Gracias a UNITEK Industrie Elektronik 
                                     hemos podido controlar el motor dándonos unos magníficos 150CV. En el grupo de motor se trabaja en aspectos 
                                     dinámicos del coche y estructurales. Tales como el diseño del bloque motor y su integración en el vehículo. 
@@ -165,7 +191,7 @@
                                 </p>
                             </div>
                             <div class="tab-pane car-text" id="battery">
-                                <p class="text-muted">
+                                <p class="text-muted" data-translate="battery-section-text">
                                     La batería es una de las piezas clave del proyecto, con ella podemos alimentar a todos los dispositivos del 
                                     vehículo. Hemos diseñado un sistema de 12 baterías de 48v con los cuales obtenemos unos 670V en su estado de 
                                     máxima carga y proporcionando una potencia de 150KW.
@@ -178,7 +204,7 @@
                                 </p>
                             </div>
                             <div class="tab-pane car-text" id="design">
-                                <p class="text-muted">
+                                <p class="text-muted" data-translate="design-section-text">
                                     En este equipo se trabaja la imagen del proyecto siendo así la mirada que construye hacía nuestro público.
                                     <br>
                                     <br>
@@ -188,7 +214,7 @@
                                 </p>
                             </div>
                             <div class="tab-pane car-text" id="marketing">
-                                <p class="text-muted">
+                                <p class="text-muted" data-translate="marketing-section-text">
                                     El grupo de marketing se encarga de toda la gestión del proyecto. Se tratan asuntos económicos, sociales y 
                                     organizativos. El principal objetivo de esta sección es el funcionamiento adecuado de las distintas partes 
                                     que componen WattmobileUPV.
@@ -232,11 +258,21 @@
                 }]
             };
             var marksOption = {
-
+                legend: {
+                    labels: {
+                        fontSize: 16
+                    }
+                },
+                data: {
+                    labels: {
+                        fontSize: 16
+                    } 
+                }
             }
             var radarChart = new Chart(popCanvas, {
                 type: 'radar',
-                data: marksData
+                data: marksData,
+                options: marksOption
             });
         </script>
 
@@ -245,6 +281,51 @@
             ScrollReveal().reveal('.table-car');
             ScrollReveal().reveal('.chart-car');
             ScrollReveal().reveal('.sections-car');
+        </script>
+
+        <!-- Lang-->
+        <script>
+            // Lang info
+            var langs = ['ES', 'EN', 'VAL']
+            var lang_index = 0
+
+            // The page will appear in english
+            var current_lang = langs[lang_index]
+
+
+            window.change_lang = function() {
+                // Selecting the next lang
+                past_lang = langs[lang_index]
+                lang_index = ++lang_index % 2
+                current_lang = langs[lang_index]
+                document.getElementById('nav-but').innerHTML = past_lang.toUpperCase()
+                translate()
+            }
+
+            window.change_to = function(lang) {
+                // Selecting the next lang
+                past_lang = langs[lang_index]
+                if ('ES' == lang) {
+                    lang_index = 0
+                } else if ('EN' == lang) {
+                    lang_index = 1
+                } else if ('VAL' == lang) {
+                    lang_index = 2
+                } else {
+                    lang_index = 0
+                }
+                current_lang = lang
+                translate()
+            }
+
+            function translate() {
+                $("[data-translate]").each(function() {
+                    var key = $(this).data('translate')
+                    $(this).html(dictionary[key][current_lang] || "N/A")
+                });
+            }
+
+            translate();
         </script>
         </body>
 </html>
