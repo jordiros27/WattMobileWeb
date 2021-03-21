@@ -10455,3 +10455,12 @@ header.masthead h1 {
   background-attachment: scroll;
   background-size: cover;
 }
+
+.social {
+  padding: 3%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+}

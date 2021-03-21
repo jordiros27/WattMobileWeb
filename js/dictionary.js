@@ -25,6 +25,11 @@ var dictionary = {
         'VAL' : 'Imatges',
         'EN' : 'Images'
     },
+    'nav-project' : {
+        'ES' : 'Proyecto',
+        'VAL' : 'Projecte',
+        'EN' : 'Project'
+    },
     'contact-title' : {
         'ES' : 'Contacto',
         'VAL' : 'Contacte',
