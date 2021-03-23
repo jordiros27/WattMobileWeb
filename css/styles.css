@@ -10459,6 +10459,9 @@ header.masthead h1 {
 .social {
   padding: 3%;
 }
+.fa-instagram:before {
+  content: "\f16d";
+}
 
 .project {
   display: flex;
