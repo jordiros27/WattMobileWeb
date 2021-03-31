@@ -10233,6 +10233,8 @@ header.masthead h1 {
   }
   .text-project {
     margin-top: 5%;
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 576px) {
@@ -10242,6 +10244,8 @@ header.masthead h1 {
   }
   .text-project {
     margin-top: 5%;
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -10250,30 +10254,32 @@ header.masthead h1 {
     padding-bottom: 2%;
   }
   .text-project {
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 992px) {
   .photo-project-1 {
     float: left;
-    width: 50%;
+    width: 100%;
     padding-right: 5%;
     padding-bottom: 2%;
   }
   .text-project {
-    display: contents;
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 1200px) {
   .photo-project-1 {
     float: left;
-    width: 50%;
+    width: 100%;
     padding-right: 5%;
     padding-bottom: 2%;
   }
   .text-project {
-    margin-top: 5%;
-    display: contents;
+    display: flex;
+    align-items: center;
   }
 }
 .title-section {
@@ -10287,6 +10293,8 @@ header.masthead h1 {
 .text-project {
   color: #fff !important;
   font-size: 12pt;
+  display: flex;
+  align-items: center;
 }
 
 .project {
