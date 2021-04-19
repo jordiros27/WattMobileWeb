@@ -10455,7 +10455,7 @@ header.masthead h1 {
 }
 
 .team-photo {
-  background-image: url("../assets/img/people/hero1.jpeg");
+  background-image: url("../assets/img/people/team.png");
   padding-top: 25%;
   padding-bottom: 30%;
   background-position: center;
@@ -10474,4 +10474,10 @@ header.masthead h1 {
 .project {
   display: flex;
   align-items: center;
+}
+
+/*Imagenes*/
+
+.img-1 {
+  margin: 5%;
 }
