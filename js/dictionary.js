@@ -159,24 +159,48 @@ var dictionary = {
 
     //CAR
     'adapted-title' : {
-        'ES' : 'Coche',
-        'VAL' : 'Cotxe',
-        'EN' : 'Car'
+        'ES' : 'Cómo lo hemos ido adaptando',
+        'VAL' : 'Com ho hem anat adaptant',
+        'EN' : 'How we have adapted it'
     },
     'adapted-text' : {
-        'ES' : 'Coche',
-        'VAL' : 'Cotxe',
-        'EN' : 'Car'
-    },
+        'ES' : 'El primer prototipo de Wattmobile UPV ha sido diseñado para participar en los distintos \
+        eventos de las subida de montaña de Rally. Por lo tanto, los objetivos han sido optimizar el peso \
+        y la potencia para realizar con éxito las pruebas del campeonato.<br><br>\
+        Este proyecto ha requerido un año de planificación y estudio para comprender \
+        las necesidades de un plan de esta envergadura. A lo largo del próximo año empezará el desarrollo \
+        del coche y finalizará la primera versión.',
+        'VAL' : 'El primer prototip de Wattmobile UPV ha sigut dissenyat per \
+        tal de participar als distints esdeveniments de les pujades de muntanya de \
+        Rally. Per tant, els objectius han sigut optimitzar el pes i la potència per a\
+        realitzar amb èxit les proves del campionat. <br><br> Aquest projecte ha requerit un any \
+        de planificació i estudi per a comprendre les necessitats d’un pla d’aquesta envergadura. \
+        Al llarg del pròxim any començarà el desenvolupament del cotxe i finalitzarà la primera versió',
+        'EN' : 'The first prototype of Wattmobile UPV is designed to participate in the various Rally mountain \
+        climb events. Therefore, the objectives were to improve the weight and power of the engine to be able \
+        to successfully carry out the different tests of the championship.\
+        <br> <br> This project has required a year of planning and study to understand the needs of a plan of \
+        this magnitude. Over the next year the development of the car will begin and the first version will be \
+        finalized.'},
     'doing-title' : {
-        'ES' : 'Coche',
-        'VAL' : 'Cotxe',
-        'EN' : 'Car'
+        'ES' : 'Qué estamos haciendo',
+        'VAL' : 'Què estem fent',
+        'EN' : 'What are we doing'
     },
     'doing-text' : {
-        'ES' : 'Coche',
-        'VAL' : 'Cotxe',
-        'EN' : 'Car'
+        'ES' : 'El coche será la primera versión del proyecto que Wattmobile busca llevar a cabo. En si el automóvil \
+        será muy similar al vehículo inicial de combustión. En la segunda versión, el vehículo doblará la potencia y \
+        se introducirá una caja de cambios que permitirá aumentar la velocidad del automóvil. De este modo el proyecto\
+         y el coche avanzarán conjuntamente en dirección a una versión que se adecue a los nuevos requerimientos \
+        medioambientales.',
+        'VAL' : 'El cotxe serà la primera versió del projecte que Wattmobile tracta de dur a terme. En si el vehicle \
+        serà molt similar a l’automòbil de combustió. En la segona versió, aquest doblarà la potència i s’introduirà \
+        una caixa de canvis que permetrà augmentar la velocitat del cotxe. D’aquest mode el projecte i el cotxe \
+        avançaran conjuntament en direcció a un prototip que s’adeqüe als nous requeriments mediambientals.',
+        'EN' : 'The car will be the first version of what the Wattmobile project wants to do. In itself the car will be \
+        very similar to the vehicle it was before with the gasoline engine.In the second version, the power will be \
+        increased to double and a gearbox that will allow to increase the speed of the car will be introduced. In this way \
+        the project and the car will move forward together towards a version that meets the new environmental requirements.'
     },
     'power' : {
         'ES' : 'Potencia',
