@@ -41,7 +41,7 @@ var dictionary = {
         'EN' : 'Do you want to contact us? Do not hesitate!'
     },
     'contact-button' : {
-        'ES' : 'Contacté!',
+        'ES' : 'Contacte!',
         'VAL' : 'Contacte!',
         'EN' : 'Contact!'
     },
@@ -139,8 +139,22 @@ var dictionary = {
         las nuevas tecnologías automovilísticas en el mundo del deporte. En este proyecto se aplican conocimientos \
         de electricidad, esfuerzos de estructuras, diseño, electrónica y  cualquier capacidad cognitiva adquirida \
         en los grados de la UPV. ',
-        'VAL' : 'Cotxe',
-        'EN' : 'Car'
+        'VAL' : 'Per altra banda aquest treball en equip nodreix les habilitats dels estudiants de la Universitat\
+        Politècnica de València que desitgen conèixer més sobre el món de la sostenibilitat i els automòbils \
+        mitjançant el desenvolupament de feines conjuntes dedicades a posar en pràctica els coneixements adquirits. \
+        De tal forma s\'aconsegueix potenciar la capacitat d\'adaptació a un futur laboral i personal en què puga primar \
+        la il·lusió i la formació constant.<br> <br> \
+        Wattmobile UPV és el primer vehicle 100% elèctric de competició a Espanya. Amb tot açò tractem d\'introduir les noves\
+        tecnologies automobilístiques al món esportiu. En aquest projecte s\'apliquen coneixements d\'electricitat, reforçament\
+        d\'estructures, disseny i qualsevol capacitat cognitiva adquirida als graus de la UPV.\
+        ',
+        'EN' : 'This teamwork nourishes the skills of the students of the Polytechnic University of Valencia\
+        who wish to learn more about the world of sustainability and automobiles through the development of joint tasks\
+        dedicated to putting the acquired knowledge into practice. In this way, it is possible to enhance the ability to \
+        adapt to a work and personal future in which enthusiasm and constant training prevail.<br> <br> \
+        WattmobileUPV is the first 100% electric competition vehicle in Spain. With this, we intend to introduce\
+        new automotive technologies in the world of sports. In this project, knowledge of electricity, structural efforts, \
+        design, electronics and any cognitive ability acquired in the UPV degrees are applied.'
     },
 
     //CAR
@@ -407,6 +421,15 @@ var dictionary = {
         'EN' : 'Marketing member'
     },
 
+    //Social Media
+    'social-media' :{
+        'ES' : '¡Síguenos en nuestras redes sociales para no perderte nada!',
+        'VAL': 'Segueix-nos en les nostres xarxes socials per no perdre\'t res!',
+        'EN': 'Follow us on our social media and don\'t miss out on anything!'
+    },
+
+
+    
     //Project
     'project-title' : {
         'ES' : 'Proyecto',
