@@ -30,6 +30,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Scroll Reveal-->
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- Language-->
+        <script src="js/dictionary.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,13 +47,13 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-images" href="images.html">Imágenes</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" data-translate="nav-project" href="project.html">Proyecto</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="bar-lang">
-                              ES
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="nav-lang">
+                              
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" onclick="change_to('es');">ES</a>
-                                <a class="dropdown-item" onclick="change_to('en');">EN</a>
-                                <a class="dropdown-item" onclick="change_to('vlc');">VLC</a>
+                                <a class="dropdown-item" onclick="change_to('ES');">ES</a>
+                                <a class="dropdown-item" onclick="change_to('EN');">EN</a>
+                                <a class="dropdown-item" onclick="change_to('VAL');">VLC</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -806,7 +808,7 @@
         <!-- Lang-->
         <script>
             // Lang info
-            var langs = ['es', 'en', 'vlc']
+            var langs = ['ES', 'EN', 'VAL']
             var lang_index = 0
 
             // The page will appear in english
@@ -825,11 +827,11 @@
             window.change_to = function(lang) {
                 // Selecting the next lang
                 past_lang = langs[lang_index]
-                if ('en' == lang) {
+                if ('ES' == lang) {
                     lang_index = 0
-                } else if ('es' == lang) {
+                } else if ('EN' == lang) {
                     lang_index = 1
-                } else if ('vlc' == lang) {
+                } else if ('VAL' == lang) {
                     lang_index = 2
                 } else {
                     lang_index = 0
