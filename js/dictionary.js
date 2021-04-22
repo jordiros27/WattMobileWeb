@@ -36,12 +36,12 @@ var dictionary = {
         'EN' : 'Contact'
     },
     'contact-text' : {
-        'ES' : 'Quiere contactar con nosotros? No lo dude!',
+        'ES' : '¿Quiere contactar con nosotros? ¡No lo dude!',
         'VAL' : 'Vol contactar amb nosaltres? No ho dubte!',
         'EN' : 'Do you want to contact us? Do not hesitate!'
     },
     'contact-button' : {
-        'ES' : 'Contacte!',
+        'ES' : '¡Contacte!',
         'VAL' : 'Contacte!',
         'EN' : 'Contact!'
     },
@@ -58,7 +58,7 @@ var dictionary = {
 
     //INDEX
     'masthead-title' : {
-        'ES' : '100% eléctrico para competición!',
+        'ES' : '¡100% eléctrico para competición!',
         'VAL' : '100% elèctric per a competició!',
         'EN' : '100% electric for competition!'
     },
