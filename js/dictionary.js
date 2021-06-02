@@ -30,6 +30,11 @@ var dictionary = {
         'VAL' : 'Projecte',
         'EN' : 'Project'
     },
+    'nav-noticias' : {
+        'ES' : 'Noticias',
+        'VAL' : 'Notícies',
+        'EN' : 'News'
+    },
     'contact-title' : {
         'ES' : 'Contacto',
         'VAL' : 'Contacte',
@@ -69,7 +74,7 @@ var dictionary = {
     },
     //Objectives
     'objective1-title' : {
-        'ES' : '1r Objetivo',
+        'ES' : '1º Objetivo',
         'VAL' : '1r Objectiu',
         'EN' : '1st Objective'
     },
@@ -102,7 +107,7 @@ var dictionary = {
         combustion cars a second life'
     },
     'objective3-title' : {
-        'ES' : '3r Objetivo',
+        'ES' : '3º Objetivo',
         'VAL' : '3r Objectiu',
         'EN' : '3rd Objective'
     },
