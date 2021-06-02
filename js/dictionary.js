@@ -77,31 +77,29 @@ var dictionary = {
         'ES' : 'Nuestro principal objetivo es llevar el coche en el que estamos \
         trabajando a la próxima edición de subidas de montaña. Para ello estamos electrificando un ford Ka del 2000. \
         La competición a su máximo nivel requiere de una autonomía de 10 minutos y una potencia superior \
-        a los 100 km de autonomía que permita completar la prueba.',
+        a los 100 CV para poder estar al mismo nivel.',
         'VAL' : 'El nostre principal objectiu és aconseguir que el cotxe en el que estem treballant participe en la \
         pròxima edició de pujades de muntanya. Per a aconseguir-ho estem electrificant un ford Ka del 2000. La competició \
-        al seu màxim nivell requereix una autonomia de 10 minuts i una potència superior als 100 km d\'autonomia que permeta \
-        completar la proba.',
+        al seu màxim nivell requereix una autonomia de 10 minuts i una potència superior als 100 CV d\'autonomia per a poder \
+        estar al mateix nivell.',
         'EN' : 'Our main objective is to take the car we are working on to the next edition \
         of mountain climbs. To do this, we are electrifying a Ford Ka from the 2000s. \
         The competition, at its highest level, requires a range of 10 minutes of autonomy \
-        and a power greater than 100 km of autonomy to complete the test.'
+        and a power greater than 100 CV of autonomy to be at the same level.'
     },
     'objective2-title' : {
-        'ES' : '2o Objetivo',
+        'ES' : '2º Objetivo',
         'VAL' : '2n Objectiu',
         'EN' : '2nd Objective'
     },
     'objective2-text' : {
         'ES' : 'Otro de los objetivos que caracterizan al proyecto Wattmobile UPV \
-        es dar una segunda vida a los coches de combustión. De este modo los vehículos podrían ser reutilizados \
-        del mismo modo que se remodelan elementos como los muebles “vintage”.',
+        es dar una segunda vida a los coches de combustión de forma que los vehículos podrían ser reutilizados. \
+        ',
         'VAL' : 'Un altre dels objectius que caracteritzen al projecte Wattmobile UPV és donar una segona vida als \
-        cotxes de combustió. D\'aquest mode els vehicles podrien ser reutilitzats del mateix mode que es remodelen \
-        elements com els mobles "vintage".',
+        cotxes de combustió de forma que els vehicles podrien ser reutilitzats.',
         'EN' : 'Another objective that characterizes the Wattmobile UPV project is to give \
-        combustion cars a second life. In this way, vehicles could be reused in the same way \
-        that elements such as "vintage" furniture are remodeled.'
+        combustion cars a second life'
     },
     'objective3-title' : {
         'ES' : '3r Objetivo',
